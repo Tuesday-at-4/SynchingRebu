@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Testing_Page_Controller">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Screen_Main_Controller">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu fx:id="menuFile" mnemonicParsing="false" text="File">
+        <Menu mnemonicParsing="false" text="File">
           <items>
             <MenuItem mnemonicParsing="false" text="New" />
             <MenuItem mnemonicParsing="false" text="Open…" />
@@ -51,7 +51,7 @@
     </MenuBar>
       <HBox fx:id="mainHBox" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="testButton" mnemonicParsing="false" onAction="#testButton" text="Button" />
+            <Button fx:id="testButton" mnemonicParsing="false" onAction="#handleTestButton" text="Go To Screen One" />
          </children></HBox>
   </children>
 </VBox>

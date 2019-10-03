@@ -21,7 +21,9 @@ public class Screen_Main_Controller {
 
   @FXML
   private void handleTestButton() throws Exception{
+
     System.out.println("Do Something SPOOKY!");
+
     Stage temp = Main.getPrimaryStage();
     Parent rootOne = FXMLLoader.load(getClass().getResource("Screen_One_Controller.fxml"));
     //Scene secondScene = new Scene(rootOne,400,400);

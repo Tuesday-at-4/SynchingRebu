@@ -35,10 +35,14 @@ public class Main extends Application {
         sceneBeta = new Scene(layout2,300,250);
 
         primaryStage.setScene(sceneAlpha);
+
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+        primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
 
     static Stage getPrimaryStage(){
         return primaryStage;
     }
-}

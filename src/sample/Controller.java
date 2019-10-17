@@ -1,8 +1,12 @@
 package sample;
 
+
+import java.time.LocalDate;
+import java.util.Date;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -18,6 +22,7 @@ public class Controller {
   String phone;
   String username;
   String password;
+  LocalDate DOB;
 
 
   @FXML
@@ -40,6 +45,9 @@ public class Controller {
 
   @FXML
   private TextField txtField_createPassword;
+
+  @FXML
+  private DatePicker dateB_DOB;
 
 
   @FXML
@@ -64,6 +72,7 @@ public class Controller {
 
   @FXML
   void create_account(MouseEvent event) {
+    DOB = dateB_DOB.getValue();
     firstName = txtField_firstName.getText();
     lastName = txtField_lastName.getText();
     email = txtField_email.getText();
@@ -78,6 +87,7 @@ public class Controller {
         "\nLast name: " + lastName+
         "\nEmail: " + email +
         "\nPhone: "+ phone +
+            "\nDate of Birth: "+ DOB+
         "\nUsername: "+ username +
         "\nPassword: " + password);
 

@@ -44,16 +44,16 @@
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
             </Label>
-            <TextField fx:id="txtField_firstName" layoutX="110.0" layoutY="93.0"  />
-            <TextField fx:id="txtField_lastName" layoutX="111.0" layoutY="128.0"  />
-            <TextField fx:id="txtField_email" layoutX="110.0" layoutY="164.0"  />
-            <TextField fx:id="txtField_phone" layoutX="111.0" layoutY="197.0"  />
+            <TextField fx:id="txtField_firstName" layoutX="110.0" layoutY="93.0" />
+            <TextField fx:id="txtField_lastName" layoutX="111.0" layoutY="128.0" />
+            <TextField fx:id="txtField_email" layoutX="110.0" layoutY="164.0" />
+            <TextField fx:id="txtField_phone" layoutX="111.0" layoutY="197.0" />
             <Button fx:id="btn_createAccount" layoutX="119.0" layoutY="358.0" mnemonicParsing="false" onMouseClicked="#create_account" text="CREATE ACCOUNT" />
             <Label layoutX="20.0" layoutY="275.0" text="USERNAME:" textFill="WHITE" />
             <Label layoutX="19.0" layoutY="319.0" text="PASSWORD:" textFill="WHITE" />
-            <TextField fx:id="txtField_createUsername" layoutX="110.0" layoutY="271.0"  />
-            <TextField fx:id="txtField_createPassword" layoutX="110.0" layoutY="315.0"  />
-            <DatePicker layoutX="110.0" layoutY="231.0" prefHeight="26.0" prefWidth="149.0" />
+            <TextField fx:id="txtField_createUsername" layoutX="110.0" layoutY="271.0" />
+            <TextField fx:id="txtField_createPassword" layoutX="110.0" layoutY="315.0" />
+            <DatePicker fx:id="dateB_DOB" layoutX="110.0" layoutY="231.0" prefHeight="26.0" prefWidth="149.0" />
          </children>
          <padding>
             <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />

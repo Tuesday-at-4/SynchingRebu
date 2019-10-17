@@ -14,31 +14,36 @@ public class Main extends Application {
     private Scene sceneAlpha, sceneBeta;
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent rootMain = FXMLLoader.load(getClass().getResource("Screen_Main.fxml"));
+        Parent rootMain = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
         Scene sceneMain = new Scene(rootMain,400,400);
-
+        Account dummy = new Account();
 
         //Scene Alpha
-        Label label1= new Label("This is the first scene");
-        Button button1= new Button("Go to Beta");
-        button1.setOnAction(e -> primaryStage.setScene(sceneBeta));
-        VBox layout1 = new VBox(20);
-        layout1.getChildren().addAll(label1, button1);
-        sceneAlpha = new Scene(layout1, 500, 350);
+        //System.out.println("Going To Scene Alpha");
+        //Label label1= new Label("This is Scene Alpha");
+        //Button btnBeta= new Button("Go to Beta");
+        //btnBeta.setOnAction(e -> primaryStage.setScene(sceneBeta));
+        //VBox layout1 = new VBox(20);
+        //layout1.getChildren().addAll(label1, btnBeta);
+        //sceneAlpha = new Scene(layout1, 500, 350);
 
         //Scene Beta
-        Label label2= new Label("This is the second scene");
+        /*System.out.println("Going to Scene Beta");
+        Label label2= new Label("This is Scene Beta");
         Button button2= new Button("Go to scene Main");
         button2.setOnAction(e -> primaryStage.setScene(sceneMain));
         VBox layout2= new VBox(20);
         layout2.getChildren().addAll(label2, button2);
         sceneBeta = new Scene(layout2,300,250);
-
-        primaryStage.setScene(sceneAlpha);
+        */
+        /*Label label2= new Label("This is Scene Main");
+        Button button2= new Button("Go to scene Main");
+        button2.setOnAction(e -> primaryStage.setScene(sceneMain));
+        VBox layout2= new VBox(20);
+        layout2.getChildren().addAll(label2, button2);
+        sceneBeta = new Scene(layout2,300,250);
+        */
+        primaryStage.setScene(sceneMain);
         primaryStage.show();
-    }
-
-    static Stage getPrimaryStage(){
-        return primaryStage;
     }
 }

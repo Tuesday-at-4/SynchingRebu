@@ -51,7 +51,9 @@
     </MenuBar>
       <HBox fx:id="mainHBox" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button fx:id="testButton" mnemonicParsing="false" onAction="#handleTestButton" text="Do Something" />
+            <Button fx:id="btnScreenOne" mnemonicParsing="false" onAction="#handleTestButton" text="Screen One" />
+            <Button mnemonicParsing="false" text="Screen Two" />
+            <Button mnemonicParsing="false" text="Screen Three" />
          </children></HBox>
   </children>
 </VBox>

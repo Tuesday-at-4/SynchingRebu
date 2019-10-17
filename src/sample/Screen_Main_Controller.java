@@ -10,10 +10,10 @@ import javafx.stage.Stage;
 
 public class Screen_Main_Controller {
   @FXML
-  HBox mainHBox;
+  private HBox mainHBox;
 
   @FXML
-  Button testButton;
+  Button btnScreenOne;
 
   public void initialize() {
     System.out.println("Loading Main Screen!");
@@ -21,16 +21,6 @@ public class Screen_Main_Controller {
 
   @FXML
   private void handleTestButton() throws Exception{
-    System.out.println("Do Something!");
-    Stage temp = Main.getPrimaryStage();
-    Parent rootOne = FXMLLoader.load(getClass().getResource("Screen_One_Controller.fxml"));
-    //Scene secondScene = new Scene(rootOne,400,400);
-    //initialize();
-    //Main.start(temp, rootOne);
-    //temp.setScene(secondScene);
-
-
-    //Main.getPrimaryStage().setScene(secondScene);
-    //initialize();
+    System.out.println("Screen One Button was pressed");
   }
 }

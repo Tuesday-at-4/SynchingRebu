@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e878c94d-af0f-490a-bf05-41ea7b19c6a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Register.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/RegisterController.java" afterDir="false" />
+    <list default="true" id="d70ae981-4ef4-4d19-9bbb-d115cafe5c9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/politecat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Screen_Main_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Screen_Main_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/RegisterController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +21,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -31,7 +31,7 @@
           <entry type="REMOTE">
             <value>
               <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/Branch_Sab" />
+                <branch-info repo="$PROJECT_DIR$" source="origin/Branch_Ben" />
               </list>
             </value>
           </entry>
@@ -46,9 +46,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RhpoagDn0dsqywsTY1iq8qtu6H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -87,12 +96,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e878c94d-af0f-490a-bf05-41ea7b19c6a5" name="Default Changelist" comment="" />
-      <created>1571285939105</created>
+      <changelist id="d70ae981-4ef4-4d19-9bbb-d115cafe5c9a" name="Default Changelist" comment="" />
+      <created>1570136255337</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571285939105</updated>
-      <workItem from="1571285942041" duration="6803000" />
+      <updated>1570136255337</updated>
+      <workItem from="1570136256601" duration="1882000" />
     </task>
     <servers />
   </component>
@@ -104,10 +113,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Do something spooky" />
+    <MESSAGE value="Doing something spooky" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doing something spooky" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/AccountSummaryController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

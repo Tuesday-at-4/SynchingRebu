@@ -8,6 +8,17 @@ public class Account {
   private String password;
   private String email;
   private String dateOfBirth;
+  private DriverDetails deets;
+
+  public String getProfilePic() {
+    return profilePic;
+  }
+
+  public void setProfilePic(String profilePic) {
+    this.profilePic = profilePic;
+  }
+
+  private String profilePic;
 
   public String getPhone() {
     return phone;

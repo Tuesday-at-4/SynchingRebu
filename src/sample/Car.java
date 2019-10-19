@@ -16,34 +16,34 @@ public class Car {
     this.carType = new SimpleStringProperty(carType);
     this.licensePlate = new SimpleStringProperty(licensePlate);
   }
-public String getManufacturer(){
+  public String getManufacturer(){
     return manufacturer.get();
-}
-public void setManufacturer(String manufacturer){
+  }
+  public void setManufacturer(String manufacturer){
     this.manufacturer.set(manufacturer);
-}
-public String getModel(){
+  }
+  public String getModel(){
     return model.get();
-}
-public void setModel(String model){
+  }
+  public void setModel(String model){
     this.model.set(model);
-}
-public String getYear(){
+  }
+  public String getYear(){
     return year.get();
-}
-public void setYear(String year){
+  }
+  public void setYear(String year){
     this.year.set(year);
-}
-public String getCarType(){
+  }
+  public String getCarType(){
     return carType.get();
-}
-public void setCarType(String carType){
+  }
+  public void setCarType(String carType){
     this.carType.set(carType);
-}
-public String getLicensePlate(){
+  }
+  public String getLicensePlate(){
     return licensePlate.get();
-}
-public void setLicensePlate(String licensePlate){
+  }
+  public void setLicensePlate(String licensePlate){
     this.licensePlate.set(licensePlate);
-}
+  }
 }

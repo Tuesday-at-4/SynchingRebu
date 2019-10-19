@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1005.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Driver_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1005.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Driver_Controller">
   <children>
-    <AnchorPane layoutX="33.0" layoutY="246.0" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="260.0">
+    <AnchorPane layoutX="33.0" layoutY="252.0" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="252.0">
       <children>
         <Label fx:id="Rating" layoutX="6.0" layoutY="2.0" prefHeight="26.0" prefWidth="50.0" text="Rating:" />
       </children></AnchorPane>
@@ -37,18 +37,22 @@
     </AnchorPane>
     <AnchorPane layoutX="33.0" layoutY="342.0" prefHeight="288.0" prefWidth="466.0" style="-fx-background-color: white;">
       <children>
-        <SplitPane dividerPositions="0.5" layoutX="110.0" layoutY="44.0" prefHeight="288.0" prefWidth="502.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-36.0" AnchorPane.topAnchor="0.0">
+        <SplitPane dividerPositions="0.5" layoutX="110.0" layoutY="-25.0" prefHeight="313.0" prefWidth="593.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-127.0" AnchorPane.topAnchor="-25.0">
           <items>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
               <children>
-                <TableView fx:id="TableView" layoutX="14.0" layoutY="8.0" onSort="#DisplayVehicles" prefHeight="286.4" prefWidth="228.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <TableView fx:id="RegisteredVehicles" layoutX="14.0" layoutY="8.0" onSort="#DisplayVehicles" prefHeight="286.4" prefWidth="246.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                   <columns>
-                    <TableColumn prefWidth="124.80001145601273" text="Registered Vehicles" />
+                    <TableColumn fx:id="manufacturer" prefWidth="58.40002137422562" text="Manufacturer" />
+                    <TableColumn fx:id="model" prefWidth="52.80001449584961" text="Model" />
+                    <TableColumn fx:id="year" prefWidth="36.0" text="Year" />
+                    <TableColumn fx:id="carType" prefWidth="55.99998474121094" text="Car Type" />
+                    <TableColumn fx:id="licensePlate" prefWidth="86.39999389648438" text="License Plate" />
                   </columns>
                 </TableView>
               </children>
             </AnchorPane>
-            <AnchorPane prefHeight="286.0" prefWidth="270.0">
+            <AnchorPane prefHeight="286.0" prefWidth="307.0">
               <children>
                 <GridPane layoutY="30.0" prefHeight="134.0" prefWidth="228.0">
                   <columnConstraints>
@@ -56,6 +60,8 @@
                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   </columnConstraints>
                   <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -67,13 +73,16 @@
                     <TextField fx:id="getManufacturer" onInputMethodTextChanged="#add_Manu" GridPane.columnIndex="1" />
                     <TextField fx:id="getModel" onInputMethodTextChanged="#add_Model" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                     <TextField fx:id="getYear" onInputMethodTextChanged="#add_Year" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <Label text="Car Type" GridPane.rowIndex="3" />
+                    <Label text="License Plate" GridPane.rowIndex="4" />
+                    <TextField fx:id="txt_carType" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <TextField fx:id="txt_licensePlate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   </children>
                 </GridPane>
                 <Label layoutX="14.0" layoutY="5.0" text="Register Your Vehicle" />
                 <ButtonBar layoutX="14.0" layoutY="195.0" prefHeight="40.0" prefWidth="222.0">
                   <buttons>
-                    <Button fx:id="New_Button" mnemonicParsing="false" onMouseClicked="#CreateNew" text="New" />
-                    <Button fx:id="Edit_Button" mnemonicParsing="false" onMouseClicked="#Edit_Item" text="Edit" />
+                    <Button fx:id="Add_Button" mnemonicParsing="false" onMouseClicked="#Add_Vehicle" text="Add" />
                     <Button fx:id="Delete_Button" mnemonicParsing="false" onMouseClicked="#Delete_Item" prefHeight="32.0" prefWidth="79.0" text="Delete" />
                   </buttons>
                 </ButtonBar>
@@ -83,10 +92,57 @@
         </SplitPane>
       </children>
     </AnchorPane>
-    <TableView fx:id="Active_Rides" layoutX="585.0" layoutY="342.0" onSort="#add_ActiveRides" prefHeight="286.0" prefWidth="322.0">
-      <columns>
-        <TableColumn prefWidth="321.6000122070312" text="Active Rides" />
-      </columns>
-    </TableView>
+    <AnchorPane layoutX="646.0" layoutY="72.0" prefHeight="372.0" prefWidth="262.0">
+      <children>
+        <SplitPane dividerPositions="0.5" layoutX="51.0" layoutY="49.0" orientation="VERTICAL" prefHeight="372.0" prefWidth="262.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+              <children>
+                <AnchorPane layoutX="30.0" prefHeight="181.6" prefWidth="260.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <TableView layoutX="21.0" layoutY="8.0" prefHeight="181.6" prefWidth="260.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn fx:id="Passenger" onEditStart="#Display_actRides" prefWidth="103.19994813203812" text="Passenger " />
+                        <TableColumn fx:id="Time_OfRide" onEditStart="#Display_schRides" prefWidth="78.4000244140625" text="Time" />
+                        <TableColumn fx:id="Date_OfRide" onEditStart="#Display_schRides" prefWidth="80.00001525878906" text="Date" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+              <children>
+                <AnchorPane layoutX="23.0" layoutY="-18.0" prefHeight="181.6" prefWidth="260.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <Label layoutX="81.0" layoutY="5.0" text="Scheduled Rides" />
+                    <GridPane layoutX="17.0" layoutY="23.0" prefHeight="91.0" prefWidth="228.0">
+                      <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.4000244140625" minWidth="10.0" prefWidth="115.5999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.4000244140625" minWidth="10.0" prefWidth="112.4000244140625" />
+                      </columnConstraints>
+                      <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                      <children>
+                        <Label prefHeight="18.0" prefWidth="116.0" text="Passenger's name" />
+                        <Label text="Time" GridPane.rowIndex="1" />
+                        <Label text="Date" GridPane.rowIndex="2" />
+                        <TextField fx:id="passengerName" GridPane.columnIndex="1" />
+                        <TextField fx:id="Time" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="Date" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                      </children>
+                    </GridPane>
+                    <Button fx:id="schedule_Button" layoutX="105.0" layoutY="134.0" mnemonicParsing="false" text="Add" />
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </items>
+        </SplitPane>
+      </children>
+    </AnchorPane>
   </children>
 </AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1005.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Driver_Controller">
+  <children>
+    <AnchorPane layoutX="33.0" layoutY="246.0" prefHeight="32.0" prefWidth="222.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="260.0">
+      <children>
+        <Label fx:id="Rating" layoutX="6.0" layoutY="2.0" prefHeight="26.0" prefWidth="50.0" text="Rating:" />
+      </children></AnchorPane>
+    <AnchorPane layoutX="299.0" layoutY="49.0" prefHeight="107.0" prefWidth="262.0" style="-fx-background-color: gray;">
+      <children>
+        <Label fx:id="label_Name" layoutX="22.0" layoutY="25.0" text="Name:" textFill="#f5f2f2f7">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+        <Label fx:id="label_Age" layoutX="22.0" layoutY="66.0" text="Age:" textFill="#f8f6f6">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+        <TextField fx:id="Text_Name" layoutX="95.0" layoutY="25.0" style="-fx-background-color: white;" />
+        <TextField fx:id="Text_Age" layoutX="94.0" layoutY="66.0" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: white;" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="33.0" layoutY="342.0" prefHeight="288.0" prefWidth="466.0" style="-fx-background-color: white;">
+      <children>
+        <SplitPane dividerPositions="0.5" layoutX="110.0" layoutY="44.0" prefHeight="288.0" prefWidth="502.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-36.0" AnchorPane.topAnchor="0.0">
+          <items>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+              <children>
+                <TableView fx:id="TableView" layoutX="14.0" layoutY="8.0" onSort="#DisplayVehicles" prefHeight="286.4" prefWidth="228.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <columns>
+                    <TableColumn prefWidth="124.80001145601273" text="Registered Vehicles" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="286.0" prefWidth="270.0">
+              <children>
+                <GridPane layoutY="30.0" prefHeight="134.0" prefWidth="228.0">
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                    <Label text="Manufacturer" />
+                    <Label text="Model" GridPane.rowIndex="1" />
+                    <Label text="Year" GridPane.rowIndex="2" />
+                    <TextField fx:id="getManufacturer" onInputMethodTextChanged="#add_Manu" GridPane.columnIndex="1" />
+                    <TextField fx:id="getModel" onInputMethodTextChanged="#add_Model" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <TextField fx:id="getYear" onInputMethodTextChanged="#add_Year" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  </children>
+                </GridPane>
+                <Label layoutX="14.0" layoutY="5.0" text="Register Your Vehicle" />
+                <ButtonBar layoutX="14.0" layoutY="195.0" prefHeight="40.0" prefWidth="222.0">
+                  <buttons>
+                    <Button fx:id="New_Button" mnemonicParsing="false" onMouseClicked="#CreateNew" text="New" />
+                    <Button fx:id="Edit_Button" mnemonicParsing="false" onMouseClicked="#Edit_Item" text="Edit" />
+                    <Button fx:id="Delete_Button" mnemonicParsing="false" onMouseClicked="#Delete_Item" prefHeight="32.0" prefWidth="79.0" text="Delete" />
+                  </buttons>
+                </ButtonBar>
+              </children>
+            </AnchorPane>
+          </items>
+        </SplitPane>
+      </children>
+    </AnchorPane>
+    <TableView fx:id="Active_Rides" layoutX="585.0" layoutY="342.0" onSort="#add_ActiveRides" prefHeight="286.0" prefWidth="322.0">
+      <columns>
+        <TableColumn prefWidth="321.6000122070312" text="Active Rides" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

@@ -24,7 +24,7 @@ public class Main extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Scene newScene = new Scene(newRoot, 500, 500);
+        Scene newScene = new Scene(newRoot);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(newScene);
         window.show();

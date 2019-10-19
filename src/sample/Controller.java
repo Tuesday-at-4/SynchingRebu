@@ -1,6 +1,9 @@
 package sample;
 
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.Month;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,19 +18,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 
-
-public class Controller implements Driver {
-private String TextName;
-private String TextAge;
-private String Manufacturer;
-private String Model;
-private String Year;
-private String Car_Type;
-private String license_Plate;
-private String passenger_Name;
-private String Current_Time;
-private String Current_Date;
-
+public class Controller implements CarData {
 
   @FXML
   private Label Rating;
@@ -39,28 +30,23 @@ private String Current_Date;
   private Label label_Age;
 
   @FXML
-  private TextField Text_Name;
-
-  @FXML
-  private TextField Text_Age;
-
-  @FXML
   private TableView<Car> RegisteredVehicles;
 
-  @FXML
-  private TableColumn<?, ?> manufacturer;
 
   @FXML
-  private TableColumn<?, ?> model;
+  private TableColumn<Car, String> manufacturer;
 
   @FXML
-  private TableColumn<?, ?> year;
+  private TableColumn<Car, String> model;
 
   @FXML
-  private TableColumn<?, ?> carType;
+  private TableColumn<Car, String> year;
 
   @FXML
-  private TableColumn<?, ?> licensePlate;
+  private TableColumn<Car, String> carType;
+
+  @FXML
+  private TableColumn<Car, String> licensePlate;
 
   @FXML
   private TextField getManufacturer;
@@ -83,28 +69,6 @@ private String Current_Date;
   @FXML
   private Button Delete_Button;
 
-  @FXML
-  private TableColumn<?, ?> Passenger;
-
-  @FXML
-  private TableColumn<?, ?> Time_OfRide;
-
-  @FXML
-  private TableColumn<?, ?> Date_OfRide;
-
-  @FXML
-  private TextField passengerName;
-
-  @FXML
-  private TextField Time;
-
-  @FXML
-  private TextField Date;
-
-  @FXML
-  private Button schedule_Button;
-
-
   @Override
   public void initialize(URL url, ResourceBundle rb) {
     TableColumn manufacturer = new TableColumn("Manufacturer");
@@ -122,13 +86,14 @@ private String Current_Date;
         new Car("Chevrolet", "Tahoe", "2008", "SUV", "RTX206"),
         new Car("Nissan", "Maxima", "2018", "Sedan", "ALL4YU"));
 
-    manufacturer.setCellValueFactory(new PropertyValueFactory<Car,String>("Manufacturer"));
-    model.setCellValueFactory(new PropertyValueFactory<Car,String>("Model"));
-    year.setCellValueFactory(new PropertyValueFactory<Car,String>("Year"));
-    carType.setCellValueFactory(new PropertyValueFactory<Car,String>("Car Type"));
-    licensePlate.setCellValueFactory(new PropertyValueFactory<Car,String>("License Plate"));
+    manufacturer.setCellValueFactory(new PropertyValueFactory<Car, String>("Manufacturer"));
+    model.setCellValueFactory(new PropertyValueFactory<Car, String>("Model"));
+    year.setCellValueFactory(new PropertyValueFactory<Car, String>("Year"));
+    carType.setCellValueFactory(new PropertyValueFactory<Car, String>("Car Type"));
+    licensePlate.setCellValueFactory(new PropertyValueFactory<Car, String>("License Plate"));
 
     RegisteredVehicles.setItems(data);
+
   }
   @FXML
   void Add_Vehicle(MouseEvent event) {
@@ -142,33 +107,40 @@ private String Current_Date;
 
   @FXML
   void DisplayVehicles(ActionEvent event) {
-    System.out.println("");
+
   }
 
   @FXML
   void Display_actRides(ActionEvent event) {
-    System.out.println("");
+
   }
 
   @FXML
   void Display_schRides(ActionEvent event) {
-    System.out.println("");
+
   }
 
   @FXML
   void add_Manu(InputMethodEvent event) {
-    Manufacturer = getManufacturer.getText();
 
   }
 
   @FXML
   void add_Model(InputMethodEvent event) {
-    Model = getModel.getText();
+
   }
 
   @FXML
   void add_Year(InputMethodEvent event) {
-    Year = getYear.getText();
+
   }
 
+  @FXML
+  void scheduleRide(MouseEvent event) {
+    System.out.println("Scheduled ride has been added.");
+  }
+  @FXML
+  void delete_Ride(MouseEvent event) {
+    System.out.println("Scheduled ride has been deleted.");
+  }
 }

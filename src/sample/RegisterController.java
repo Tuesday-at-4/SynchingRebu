@@ -1,16 +1,12 @@
 package sample;
 
 import java.time.LocalDate;
-import java.util.Date;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import java.util.Scanner;
 
 public class RegisterController {
 
@@ -21,7 +17,6 @@ public class RegisterController {
   String username;
   String password;
   LocalDate DOB;
-
 
   @FXML
   private TextField txtField_firstName;
@@ -42,27 +37,10 @@ public class RegisterController {
   private TextField txtField_createUsername;
 
   @FXML
-  private TextField txtField_createPassword;
+  private PasswordField txtField_createPassword;
 
   @FXML
   private DatePicker dateB_DOB;
-
-
-  @FXML
-  private TextField txtField_username;
-
-  @FXML
-  private Button btn_login;
-
-  @FXML
-  private PasswordField password_textField;
-
-  @FXML
-  void login(MouseEvent event) {
-    username = txtField_username.getText();
-    password = password_textField.getText();
-    System.out.println("Logging " + username + " in.");
-  }
 
   @FXML
   void create_account(MouseEvent event) {
@@ -77,7 +55,7 @@ public class RegisterController {
     System.out.println("You have created an account! \nConfirm information below is correct.");
 
     System.out.println(
-        "\nFirst name: " + firstName +
+            "\nFirst name: " + firstName +
             "\nLast name: " + lastName +
             "\nEmail: " + email +
             "\nPhone: " + phone +

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d70ae981-4ef4-4d19-9bbb-d115cafe5c9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/politecat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/RegisterController.java" afterDir="false" />
@@ -21,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -103,6 +102,14 @@
       <updated>1570136255337</updated>
       <workItem from="1570136256601" duration="1882000" />
     </task>
+    <task id="LOCAL-00001" summary="Replaced register screen &amp; added Account class">
+      <created>1571372083143</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571372083143</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +132,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Do something spooky" />
     <MESSAGE value="Doing something spooky" />
-    <option name="LAST_COMMIT_MESSAGE" value="Doing something spooky" />
+    <MESSAGE value="Replaced register screen &amp; added Account class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced register screen &amp; added Account class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

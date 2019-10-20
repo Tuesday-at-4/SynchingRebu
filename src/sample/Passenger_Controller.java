@@ -40,7 +40,7 @@ public class Passenger_Controller {
 
   @FXML
   private void createRide(Event event){
-    Rides dummy = new Rides(Account.currentUser.getUsername(), LocalTime.of(12,45), LocalDate.of(2120, 4, 15));
+    Rides dummy = new Rides(Account.currentUser.getUsername(), LocalTime.of(12,45), LocalDate.of(2120, 4, 15), "Miami", "Fort Myers");
     Main.pendingRides.add(dummy);
     initialize();
   }

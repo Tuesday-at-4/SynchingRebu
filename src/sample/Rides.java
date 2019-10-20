@@ -54,14 +54,15 @@ package sample;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Random;
 
 public class Rides {
-
   private String passengerName;
   private LocalTime time_OfRide;
   private LocalDate date_OfRide;
   private String startLocation;
   private String endLocation;
+  private int rideID;
 
   public Rides(String passName, LocalTime time, LocalDate Date, String startLoc, String endLoc) {
     this.passengerName = passName;
@@ -69,6 +70,8 @@ public class Rides {
     this.time_OfRide = time;
     this.startLocation = startLoc;
     this.endLocation = endLoc;
+    Random rnd = new Random();
+    this.rideID = rnd.nextInt(999999);
   }
 
   public String getPassengerName() {
@@ -89,5 +92,9 @@ public class Rides {
 
   public String getStartLocation() {
     return startLocation;
+  }
+
+  public int getRideID() {
+    return rideID;
   }
 }

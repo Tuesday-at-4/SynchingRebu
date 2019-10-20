@@ -7,6 +7,7 @@ import java.time.Month;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -36,16 +37,17 @@ public class AcceptRides {
   @FXML
   public void initialize(URL url, ResourceBundle rb) {
     Passenger2.setCellValueFactory(new PropertyValueFactory<AcceptedRides, String>("Passenger2"));
-    current_Date.setCellValueFactory(new PropertyValueFactory<AcceptedRides, LocalDate>("currentDate"));
-    current_Time.setCellValueFactory(new PropertyValueFactory<AcceptedRides, LocalTime>("currentTime"));
+    current_Date
+        .setCellValueFactory(new PropertyValueFactory<AcceptedRides, LocalDate>("currentDate"));
+    current_Time
+        .setCellValueFactory(new PropertyValueFactory<AcceptedRides, LocalTime>("currentTime"));
 
     accepted_Rides.setItems(getAcceptedRides());
   }
-  public ObservableList<AcceptedRides> getAcceptedRides(){
+
+  public ObservableList<AcceptedRides> getAcceptedRides() {
     ObservableList<AcceptedRides> AcceptedRides = FXCollections.observableArrayList();
-    AcceptedRides.add(new AcceptedRides("breanna",LocalTime.of(4,45),LocalDate.of(2019, Month.OCTOBER,20)));
-  return AcceptedRides;
+    AcceptedRides.add(new AcceptedRides("breanna", LocalTime.of(4, 45), LocalDate.of(2019, Month.OCTOBER, 20)));
+    return AcceptedRides;
   }
-
 }
-

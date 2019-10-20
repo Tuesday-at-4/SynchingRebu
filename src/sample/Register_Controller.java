@@ -8,9 +8,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-public class RegisterController {
-
-
+public class Register_Controller {
 
   @FXML
   private TextField txtField_firstName;
@@ -55,7 +53,7 @@ public class RegisterController {
         password);
 
     // transitions to Account Details screen (AccountSummary) from Register Account screen
-    Main.createNewScene(event, "AccountSummary.fxml");
+    Main.createNewScene(event, "Account_Summary.fxml");
 
     System.out.println("You have created an account! \nConfirm information below is correct.");
 

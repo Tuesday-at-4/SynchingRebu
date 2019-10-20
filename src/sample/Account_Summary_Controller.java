@@ -1,10 +1,11 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class AccountSummaryController {
+public class Account_Summary_Controller {
 
   @FXML
   private Label lblName;
@@ -13,7 +14,7 @@ public class AccountSummaryController {
   private Button btnDelete;
 
   @FXML
-  private Button btnEditAcc;
+  private Button btnEditAcnt;
 
   @FXML
   private Button btnEditPic;
@@ -26,6 +27,11 @@ public class AccountSummaryController {
 
   @FXML
   private Label lblEmail;
+
+  /*@FXML
+  void editAcnt(ActionEvent event) {
+
+  }*/
 
   /**
    * Initialize method to replace labels with corresponding values. Temporary for the sake of

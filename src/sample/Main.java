@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
   public void start(Stage primaryStage) throws Exception {
-    Parent root = FXMLLoader.load(getClass().getResource("Register.fxml"));
-    primaryStage.setScene(new Scene(root, 600, 500));
+    Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+    primaryStage.setScene(new Scene(root, 600, 450));
     primaryStage.show();
   }
 

@@ -18,6 +18,3 @@ Once the Ride Request has been made, a driver in the area can accept the ride re
 After the Ride, the users can provide feedback on the ride, and the payment will be charged. 
 The passengers will pay a fee based on the distance of the ride and the drivers will be paid an amount according to similar metrics.
 
-To be able to use the application you must first create an account.
-Afterwards you must choose whether you want to be a driver or passenger then you can procceed to 
-either work as a driver or become a passenger looking for rides.

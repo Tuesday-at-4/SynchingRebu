@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -18,7 +19,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 
-public class Controller implements CarData {
+public class Controller {
 
   @FXML
   private Label Rating;
@@ -69,7 +70,10 @@ public class Controller implements CarData {
   @FXML
   private Button Delete_Button;
 
-  @Override
+  @FXML
+  private Button home_Button;
+
+  @FXML
   public void initialize(URL url, ResourceBundle rb) {
     TableColumn manufacturer = new TableColumn("Manufacturer");
     TableColumn model = new TableColumn("Model");
@@ -137,10 +141,10 @@ public class Controller implements CarData {
 
   @FXML
   void scheduleRide(MouseEvent event) {
-    System.out.println("Scheduled ride has been added.");
+    System.out.println("Active ride has been added.");
   }
   @FXML
   void delete_Ride(MouseEvent event) {
-    System.out.println("Scheduled ride has been deleted.");
+    System.out.println("Active ride has been deleted.");
   }
 }

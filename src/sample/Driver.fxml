@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Driver_Controller">
    <children>
       <TabPane layoutX="254.0" layoutY="147.0" prefHeight="600.0" prefWidth="796.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -24,7 +24,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <AnchorPane layoutX="127.0" layoutY="238.0" prefHeight="569.6" prefWidth="796.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane prefHeight="569.6" prefWidth="796.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="25.0" layoutY="171.0" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: white;">
                                  <children>
@@ -94,9 +94,9 @@
                                     </SplitPane>
                                  </children>
                               </AnchorPane>
-                              <Button fx:id="home_Button" layoutX="272.0" layoutY="1.0" mnemonicParsing="false" prefHeight="303.0" prefWidth="493.0" text="HOME!!!">
+                              <Button fx:id="home_Button" layoutX="431.0" layoutY="99.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="182.0" text="HOME">
                                  <font>
-                                    <Font size="96.0" />
+                                    <Font size="16.0" />
                                  </font>
                               </Button>
                            </children>

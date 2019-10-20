@@ -21,7 +21,7 @@ public class Dashboard_Controller {
 
     @FXML
     private void handleAccountButton(ActionEvent event){
-        Main.createNewScene(event,"Account.FXML");
+        Main.createNewScene(event,"Account_Summary.FXML");
     }
 
     @FXML

@@ -15,7 +15,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1005.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Driver_Controller">
   <children>
-    <AnchorPane layoutX="33.0" layoutY="252.0" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="393.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="252.0">
+    <AnchorPane layoutX="33.0" layoutY="252.0" prefHeight="26.0" prefWidth="262.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="407.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="252.0">
       <children>
         <Label fx:id="Rating" layoutX="6.0" layoutY="2.0" prefHeight="26.0" prefWidth="50.0" text="Rating:" />
       </children></AnchorPane>
@@ -31,8 +31,6 @@
             <Font size="18.0" />
           </font>
         </Label>
-        <TextField fx:id="Text_Name" layoutX="95.0" layoutY="25.0" style="-fx-background-color: white;" />
-        <TextField fx:id="Text_Age" layoutX="94.0" layoutY="66.0" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: white;" />
       </children>
     </AnchorPane>
     <AnchorPane layoutX="33.0" layoutY="342.0" prefHeight="288.0" prefWidth="466.0" style="-fx-background-color: white;">
@@ -100,7 +98,7 @@
               <children>
                 <AnchorPane layoutX="30.0" prefHeight="181.6" prefWidth="260.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                   <children>
-                    <TableView layoutX="21.0" layoutY="8.0" prefHeight="181.6" prefWidth="260.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <TableView fx:id="scheduled_Rides" layoutX="21.0" layoutY="8.0" prefHeight="181.6" prefWidth="260.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                       <columns>
                         <TableColumn fx:id="Passenger" onEditStart="#Display_actRides" prefWidth="103.19994813203812" text="Passenger " />
                         <TableColumn fx:id="Time_OfRide" onEditStart="#Display_schRides" prefWidth="78.4000244140625" text="Time" />
@@ -135,7 +133,12 @@
                         <TextField fx:id="Date" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                       </children>
                     </GridPane>
-                    <Button fx:id="schedule_Button" layoutX="105.0" layoutY="134.0" mnemonicParsing="false" text="Add" />
+                    <ButtonBar layoutX="30.0" layoutY="130.0" prefHeight="40.0" prefWidth="200.0">
+                      <buttons>
+                        <Button fx:id="schedule_Delete" mnemonicParsing="false" onMouseClicked="#delete_Ride" text="Delete" />
+                        <Button fx:id="schedule_Button" mnemonicParsing="false" onMouseClicked="#scheduleRide" text="Add" />
+                      </buttons>
+                    </ButtonBar>
                   </children>
                 </AnchorPane>
               </children>

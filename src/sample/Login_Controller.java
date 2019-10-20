@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -7,14 +8,18 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 public class Login_Controller {
-  String username;
-  String password;
+
+  private String username;
+  private String password;
 
   @FXML
   private TextField txtField_username;
 
   @FXML
   private Button btn_login;
+
+  @FXML
+  private Button btn_signUp;
 
   @FXML
   private PasswordField password_textField;
@@ -25,5 +30,10 @@ public class Login_Controller {
     password = password_textField.getText();
     System.out.println("Logging " + username + " in.");
     Main.createNewScene(event, "Dashboard.fxml");
+  }
+
+  @FXML
+  void signUp(ActionEvent event) {
+    Main.createNewScene(event, "Register.fxml");
   }
 }

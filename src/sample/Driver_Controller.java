@@ -19,7 +19,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 
-public class Controller {
+public class Driver_Controller {
 
   @FXML
   private Label Rating;

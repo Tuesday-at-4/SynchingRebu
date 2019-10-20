@@ -97,8 +97,8 @@ public class Driver_Controller {
     licensePlate.setCellValueFactory(new PropertyValueFactory<Car, String>("License Plate"));
 
     RegisteredVehicles.setItems(data);
-
   }
+
   @FXML
   void Add_Vehicle(MouseEvent event) {
     System.out.println("Vehicle has been registered.");
@@ -111,7 +111,6 @@ public class Driver_Controller {
 
   @FXML
   void DisplayVehicles(ActionEvent event) {
-
   }
 
   @FXML
@@ -146,5 +145,13 @@ public class Driver_Controller {
   @FXML
   void delete_Ride(MouseEvent event) {
     System.out.println("Active ride has been deleted.");
+  }
+  @FXML
+  void Decline_Ride(MouseEvent event) {
+    System.out.println("Ride has been Declined.");
+  }
+  @FXML
+  void Accept_Ride(MouseEvent event) {
+    System.out.println("Ride has been Accepted.");
   }
 }

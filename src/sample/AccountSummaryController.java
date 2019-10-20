@@ -4,9 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class AccountSummaryController extends Account {
-
-  String name = getFirstName() + getLastName();
+public class AccountSummaryController {
 
   @FXML
   private Label lblName;
@@ -29,12 +27,15 @@ public class AccountSummaryController extends Account {
   @FXML
   private Label lblEmail;
 
-
-  public void setLblName(Label lblName) {
-    String name = getFirstName() + getLastName();
-    this.lblName = lblName;
-    lblName.setText(name);
+  /**
+   * Initialize method to replace labels with corresponding values. Temporary for the sake of
+   * prototype.
+   */
+  public void initialize() {
+    lblName.setText(Account.currentUser.getName());
+    lblEmail.setText(Account.currentUser.getEmail());
+    lblPhoneNum.setText(Account.currentUser.getPhone());
+    lblDOB.setText(Account.currentUser.getDateOfBirth());
   }
-
 }
 

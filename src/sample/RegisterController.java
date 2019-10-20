@@ -10,13 +10,7 @@ import javafx.scene.input.MouseEvent;
 
 public class RegisterController {
 
-  String email;
-  String firstName;
-  String lastName;
-  String phone;
-  String username;
-  String password;
-  LocalDate DOB;
+
 
   @FXML
   private TextField txtField_firstName;
@@ -44,6 +38,10 @@ public class RegisterController {
 
   @FXML
   void create_account(MouseEvent event) {
+    String email, firstName, lastName, phone, username, password;
+    LocalDate DOB;
+
+    // storing information from text fields
     DOB = dateB_DOB.getValue();
     firstName = txtField_firstName.getText();
     lastName = txtField_lastName.getText();
@@ -51,6 +49,13 @@ public class RegisterController {
     phone = txtField_phone.getText();
     username = txtField_createUsername.getText();
     password = txtField_createPassword.getText();
+
+    // creating a new registered user, holding their information
+    Account.currentUser = new Account (firstName, lastName, email, phone, DOB.toString(), username,
+        password);
+
+    // transitions to Account Details screen (AccountSummary) from Register Account screen
+    Main.createNewScene(event, "AccountSummary.fxml");
 
     System.out.println("You have created an account! \nConfirm information below is correct.");
 

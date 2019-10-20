@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d70ae981-4ef4-4d19-9bbb-d115cafe5c9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AccountSummary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AccountSummaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/RegisterController.java" afterDir="false" />
@@ -56,7 +59,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,6 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570136255337</updated>
       <workItem from="1570136256601" duration="1882000" />
+      <workItem from="1571536812046" duration="5436000" />
     </task>
     <task id="LOCAL-00001" summary="Replaced register screen &amp; added Account class">
       <created>1571372083143</created>
@@ -134,16 +138,5 @@
     <MESSAGE value="Doing something spooky" />
     <MESSAGE value="Replaced register screen &amp; added Account class" />
     <option name="LAST_COMMIT_MESSAGE" value="Replaced register screen &amp; added Account class" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/AccountSummaryController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

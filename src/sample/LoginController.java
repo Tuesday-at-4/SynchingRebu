@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 public class LoginController {
+
   String username;
   String password;
 

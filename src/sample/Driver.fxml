@@ -15,7 +15,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Driver_Controller">
    <children>
       <TabPane layoutX="254.0" layoutY="147.0" prefHeight="600.0" prefWidth="796.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -84,7 +83,7 @@
                                                 </GridPane>
                                                 <ButtonBar layoutX="61.0" layoutY="192.0" prefHeight="40.0" prefWidth="222.0">
                                                    <buttons>
-                                                      <Button fx:id="Add_Button" mnemonicParsing="false" onMouseClicked="#Add_Vehicle" text="Add" />
+                                                      <Button  fx:id="Add_Button" mnemonicParsing="false" onMouseClicked="#Add_Vehicle" text="Add" />
                                                       <Button fx:id="Delete_Button" mnemonicParsing="false" onMouseClicked="#Delete_Item" prefHeight="32.0" prefWidth="79.0" text="Delete" />
                                                    </buttons>
                                                 </ButtonBar>
@@ -130,7 +129,7 @@
                                           <ButtonBar layoutX="580.0" layoutY="12.0" prefHeight="40.0" prefWidth="200.0">
                                              <buttons>
                                                 <Button fx:id="schedule_Delete" mnemonicParsing="false" onMouseClicked="#delete_Ride" text="Delete" />
-                                                <Button fx:id="schedule_Button" mnemonicParsing="false" onMouseClicked="#scheduleRide" text="Add" />
+                                                <Button  fx:id="schedule_Button" mnemonicParsing="false" onMouseClicked="#scheduleRide" text="Add" />
                                              </buttons>
                                           </ButtonBar>
                                        </children>
@@ -151,7 +150,7 @@
                           <items>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                  <children>
-                                    <TableView fx:id="accepted_Rides" layoutX="-1.0" prefHeight="470.0" prefWidth="794.0" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <TableView fx:id="Rides_Accepted" layoutX="-1.0" prefHeight="470.0" prefWidth="794.0" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <columns>
                                           <TableColumn fx:id="Passenger2" prefWidth="339.2000366449356" text="Passenger" />
                                           <TableColumn fx:id="current_Date" prefWidth="243.99996948242188" text="Current Date" />
@@ -164,8 +163,8 @@
                                  <children>
                                     <ButtonBar layoutX="580.0" layoutY="32.0" prefHeight="40.0" prefWidth="200.0">
                                       <buttons>
-                                        <Button fx:id="accept_Ride" mnemonicParsing="false" text="Accept" />
-                                          <Button fx:id="decline_Ride" mnemonicParsing="false" text="Decline" />
+                                        <Button  fx:id="accept_Ride" mnemonicParsing="false" onMouseClicked="#Accept_Ride" text="Accept" />
+                                          <Button fx:id="decline_Ride" mnemonicParsing="false" onMouseClicked="#Decline_Ride" text="Decline" />
                                       </buttons>
                                     </ButtonBar>
                                  </children>

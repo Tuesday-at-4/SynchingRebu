@@ -1,3 +1,7 @@
+/*
+ * Account
+ * Basic fields and methods related to a user's account.
+ */
 package sample;
 
 public class Account {

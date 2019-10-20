@@ -1,3 +1,7 @@
+/*
+ * Account Summary Controller
+ * Displays account information of the user that is currently logged in.
+ */
 package sample;
 
 import javafx.event.Event;
@@ -23,6 +27,10 @@ public class Account_Summary_Controller {
     Main.createNewScene(event, "Dashboard.fxml");
   }
 
+  /**
+   * Deletes the user's account information and redirects them to the login page.
+   * @param event - passes in the mouse button click action
+   */
   @FXML
   private void deleteAccount(Event event){
     Account.currentUser = null;

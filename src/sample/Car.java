@@ -1,3 +1,7 @@
+/*
+ * Car
+ * Classifying cars by manufacturer, model, year, type, and license plate address.
+ */
 package sample;
 
 import javafx.beans.property.SimpleStringProperty;

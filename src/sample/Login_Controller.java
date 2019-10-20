@@ -1,3 +1,7 @@
+/*
+ * Login
+ * Handles the login screen where users enter their registered username & password
+ */
 package sample;
 
 import javafx.event.ActionEvent;

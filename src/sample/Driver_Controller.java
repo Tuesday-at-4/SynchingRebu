@@ -1,3 +1,7 @@
+/*
+ * Driver
+ * Sets up the driver scene
+ */
 package sample;
 
 import java.net.URL;

@@ -1,3 +1,7 @@
+/*
+ * Active Rides
+ * Used in the process of making the driver scene
+ */
 package sample;
 
 import java.net.URL;

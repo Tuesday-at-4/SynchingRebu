@@ -1,3 +1,7 @@
+/*
+ * Passenger
+ * Sets up the scene for the passenger user
+ */
 package sample;
 
 import java.time.LocalDate;

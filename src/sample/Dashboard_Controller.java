@@ -1,3 +1,7 @@
+/*
+ * Dashboard
+ * Initializes the dashboard for the home page
+ */
 package sample;
 
 import java.awt.TextField;
@@ -11,8 +15,6 @@ public class Dashboard_Controller {
     TextField textFieldNews;
 
     public void initialize(){
-//        textFieldNews.setText("This is for News!");
-
     }
 
     public void handlePassengerButton(ActionEvent event){

@@ -1,3 +1,7 @@
+/*
+ * Register
+ * Registers a new account for a user with the information inputted in the provided text fields.
+ */
 package sample;
 
 import java.time.LocalDate;

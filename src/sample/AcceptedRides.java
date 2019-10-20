@@ -1,3 +1,7 @@
+/*
+ * Accepted Rides
+ * Pending ride requests that the driver has accepted.
+ */
 package sample;
 
 import java.time.LocalDate;

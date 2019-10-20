@@ -1,3 +1,7 @@
+/*
+ * Accept Rides
+ * Allows a driver to accept pending ride requests.
+ */
 package sample;
 
 import java.net.URL;

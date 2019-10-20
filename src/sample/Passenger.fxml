@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Passenger_Controller">
   <children>
-<Button layoutX="25.0" layoutY="439.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="94.0" text="Home">
+<Button layoutX="25.0" layoutY="439.0" mnemonicParsing="false" onAction="#returnHome" prefHeight="65.0" prefWidth="94.0" text="Home">
 <font>
   <Font size="20.0" />
 </font>
@@ -23,17 +23,18 @@
 <TextField fx:id="textFieldEndLocation" layoutX="500.0" layoutY="150.0" prefHeight="33.0" prefWidth="209.0" promptText="End Location" />
       <TextField fx:id="textFieldStartTime" layoutX="500.0" layoutY="200.0" prefHeight="33.0" prefWidth="209.0" promptText="Start Time" />
       <TextField fx:id="textFieldEndTime" layoutX="500.0" layoutY="250.0" prefHeight="33.0" prefWidth="209.0" promptText="End Time" />
-      <TextArea layoutX="25.0" layoutY="83.0" prefHeight="300.0" prefWidth="158.0" promptText="No Pending Rides" />
+      <TextArea fx:id="textAreaPendingRides" layoutX="25.0" layoutY="83.0" prefHeight="300.0" prefWidth="158.0" promptText="No Pending Rides" />
       <Label layoutX="32.0" layoutY="39.0" text="My Pending Rides">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextArea layoutX="229.0" layoutY="83.0" prefHeight="300.0" prefWidth="158.0" promptText="No Accepted Rides" />
+      <TextArea fx:id="textAreaAcceptedRides" layoutX="229.0" layoutY="83.0" prefHeight="300.0" prefWidth="158.0" promptText="No Accepted Rides" />
       <Label layoutX="232.0" layoutY="39.0" text="My Accepted Rides">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
+      <Button fx:id="btnCreateRide" layoutX="577.0" layoutY="303.0" mnemonicParsing="false" onAction="#createRide" text="Create Ride" />
   </children>
 </AnchorPane>

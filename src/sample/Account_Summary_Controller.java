@@ -1,23 +1,13 @@
 package sample;
 
-import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class Account_Summary_Controller {
 
   @FXML
   private Label lblName;
-
-  @FXML
-  private Button btnDelete;
-
-  @FXML
-  private Button btnEditAcnt;
-
-  @FXML
-  private Button btnEditPic;
 
   @FXML
   private Label lblPhoneNum;
@@ -28,10 +18,16 @@ public class Account_Summary_Controller {
   @FXML
   private Label lblEmail;
 
-  /*@FXML
-  void editAcnt(ActionEvent event) {
+  @FXML
+  private void returnToDashboard(Event event){
+    Main.createNewScene(event, "Dashboard.fxml");
+  }
 
-  }*/
+  @FXML
+  private void deleteAccount(Event event){
+    Account.currentUser = null;
+    Main.createNewScene(event, "Login.fxml");
+  }
 
   /**
    * Initialize method to replace labels with corresponding values. Temporary for the sake of

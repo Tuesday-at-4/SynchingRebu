@@ -1,4 +1,4 @@
-/*package sample;
+package sample;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -15,7 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 
-public class Schedule {
+public class ActiveRides {
   @FXML
   private TableView<Rides> scheduled_Rides;
   @FXML
@@ -26,15 +26,6 @@ public class Schedule {
 
   @FXML
   private TableColumn<Rides, LocalDate> Date_OfRide;
-
-  @FXML
-  private TextField passengerName;
-
-  @FXML
-  private TextField Time;
-
-  @FXML
-  private TextField Date;
 
   @FXML
   private Button schedule_Button;
@@ -58,4 +49,4 @@ public class Schedule {
     return Rides;
   }
 
-}*/
+}

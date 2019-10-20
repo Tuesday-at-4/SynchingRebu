@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Account_Summary_Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Account_Summary_Controller">
   <children>
     <Label layoutX="74.0" layoutY="35.0" text="Account Details" textFill="WHITE">
       <font>
@@ -29,14 +29,13 @@
         <Font size="18.0" />
       </font>
     </Label>
-    <Button fx:id="btnDelete" layoutX="452.0" layoutY="328.0" mnemonicParsing="false" text="Delete Account" />
-    <Button fx:id="btnEditAcnt" layoutX="60.0" layoutY="328.0" mnemonicParsing="false" text="Edit Details" />
+    <Button fx:id="btnDelete" layoutX="452.0" layoutY="328.0" mnemonicParsing="false" onAction="#deleteAccount" text="Delete Account" />
+    <Button fx:id="btnDashboard" layoutX="60.0" layoutY="328.0" mnemonicParsing="false" onAction="#returnToDashboard" text="Return to Dashboard" />
     <Label layoutX="36.0" layoutY="192.0" text="Date of Birth" textFill="WHITE">
       <font>
         <Font size="18.0" />
       </font>
     </Label>
-    <Button fx:id="btnEditPic" layoutX="513.0" layoutY="167.0" mnemonicParsing="false" text="Edit" />
     <Label fx:id="lblPhoneNum" layoutX="157.0" layoutY="164.0" text="placeholder" textFill="WHITE">
       <font>
         <Font size="18.0" />

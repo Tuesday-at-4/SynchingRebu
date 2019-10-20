@@ -1,4 +1,4 @@
-package sample;
+/*package sample;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -46,5 +46,48 @@ public class Rides {
 
   public int getRideID() {
     return rideID;
+  }
+}
+*/
+
+package sample;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Rides {
+
+  private String passengerName;
+  private LocalTime time_OfRide;
+  private LocalDate date_OfRide;
+  private String startLocation;
+  private String endLocation;
+
+  public Rides(String passName, LocalTime time, LocalDate Date, String startLoc, String endLoc) {
+    this.passengerName = passName;
+    this.date_OfRide = Date;
+    this.time_OfRide = time;
+    this.startLocation = startLoc;
+    this.endLocation = endLoc;
+  }
+
+  public String getPassengerName() {
+    return passengerName;
+  }
+
+  public LocalDate getDate_OfRide() {
+    return date_OfRide;
+  }
+
+  public LocalTime getTime_OfRide() {
+    return time_OfRide;
+  }
+
+  public String getEndLocation() {
+    return endLocation;
+  }
+
+  public String getStartLocation() {
+    return startLocation;
   }
 }

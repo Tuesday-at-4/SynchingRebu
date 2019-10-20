@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -18,7 +19,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 
-public class Driver_Controller{
+public class Driver_Controller {
 
   @FXML
   private Label Rating;
@@ -70,6 +71,9 @@ public class Driver_Controller{
   private Button Delete_Button;
 
   @FXML
+  private Button home_Button;
+
+  @FXML
   public void initialize(URL url, ResourceBundle rb) {
     TableColumn manufacturer = new TableColumn("Manufacturer");
     TableColumn model = new TableColumn("Model");
@@ -107,34 +111,40 @@ public class Driver_Controller{
 
   @FXML
   void DisplayVehicles(ActionEvent event) {
+
   }
 
   @FXML
   void Display_actRides(ActionEvent event) {
+
   }
 
   @FXML
   void Display_schRides(ActionEvent event) {
+
   }
 
   @FXML
   void add_Manu(InputMethodEvent event) {
+
   }
 
   @FXML
   void add_Model(InputMethodEvent event) {
+
   }
 
   @FXML
   void add_Year(InputMethodEvent event) {
+
   }
 
   @FXML
   void scheduleRide(MouseEvent event) {
-    System.out.println("Scheduled ride has been added.");
+    System.out.println("Active ride has been added.");
   }
   @FXML
   void delete_Ride(MouseEvent event) {
-    System.out.println("Scheduled ride has been deleted.");
+    System.out.println("Active ride has been deleted.");
   }
 }

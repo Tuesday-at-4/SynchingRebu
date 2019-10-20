@@ -19,7 +19,7 @@ public class Passenger_Controller {
   TextField textFieldStartTime;
 
   @FXML
-  TextField textFieldEndTime;
+  TextField textFieldStartDate;
 
   @FXML
   TextArea textAreaPendingRides;
@@ -27,10 +27,22 @@ public class Passenger_Controller {
   @FXML
   public void initialize(){
     String dummyStr = "";
-    for (Rides x:Main.pendingRides){
-      dummyStr += "RideID: " + x.getPassengerName() + "\n";
+    String dummyString = "";
+    for (Rides x: Main.pendingRides) {
+      dummyStr +=
+          "RideID: " + x.getRideID() + "\n\tPassenger: " + x.getPassengerName() + "\n\tFrom: "
+              + x.getStartLocation() + "\n\tTo: " + x.getEndLocation() + "\n\tDate: " + x
+              .getDate_OfRide() + "\n\tTime: " + x.getTime_OfRide() + "\n\n";
     }
     textAreaPendingRides.setText(dummyStr);
+    if (Main.confirmedRides.isEmpty()){
+      dummyString = "No Confirmed Rides";
+    } else{
+      for (Rides y : Main.confirmedRides) {
+        dummyString += "RideID: " + y.getRideID() + "\n\tDriver" + y.getDriver() + "\n\tDate: " + y
+            .getDate_OfRide() + "\n\tTime: " + y.getTime_OfRide() + "\n\n";
+      }
+    }
   }
 
   @FXML
@@ -40,7 +52,14 @@ public class Passenger_Controller {
 
   @FXML
   private void createRide(Event event){
-    Rides dummy = new Rides(Account.currentUser.getUsername(), LocalTime.of(12,45), LocalDate.of(2120, 4, 15), "Miami", "Fort Myers");
+    String[] timeString = textFieldStartTime.getText().split(":");
+    String[] dateString = textFieldStartDate.getText().split("-");
+    Rides dummy = new Rides(
+        Account.currentUser.getUsername(),
+        LocalTime.of(Integer.parseInt(timeString[0]),Integer.parseInt(timeString[1])),
+        LocalDate.of(Integer.parseInt(dateString[0]), Integer.parseInt(dateString[1]), Integer.parseInt(dateString[2])),
+        textFieldStartLocation.getText(),
+        textFieldEndLocation.getText());
     Main.pendingRides.add(dummy);
     initialize();
   }

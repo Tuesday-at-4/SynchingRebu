@@ -63,6 +63,7 @@ public class Rides {
   private String startLocation;
   private String endLocation;
   private int rideID;
+  private String driver;
 
   public Rides(String passName, LocalTime time, LocalDate Date, String startLoc, String endLoc) {
     this.passengerName = passName;
@@ -72,6 +73,7 @@ public class Rides {
     this.endLocation = endLoc;
     Random rnd = new Random();
     this.rideID = rnd.nextInt(999999);
+    this.driver = "None";
   }
 
   public String getPassengerName() {
@@ -96,5 +98,9 @@ public class Rides {
 
   public int getRideID() {
     return rideID;
+  }
+
+  public String getDriver() {
+    return driver;
   }
 }

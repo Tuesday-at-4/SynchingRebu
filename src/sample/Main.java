@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     static ArrayList<Rides> pendingRides= new ArrayList<Rides>();
-    static Map<String, Rides> confirmedRides = new HashMap<String, Rides>();
+    static ArrayList<Rides> confirmedRides = new ArrayList<Rides>();
 
     @Override
     public void start(Stage primaryStage) throws Exception {

@@ -2,6 +2,8 @@ package sample;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import javafx.application.Application;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +13,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    static ArrayList<Rides> activeRides= new ArrayList<Rides>();
-    static ArrayList<Rides> inactiveRides = new ArrayList<Rides>();
+    static ArrayList<Rides> pendingRides= new ArrayList<Rides>();
+    static Map<String, Rides> confirmedRides = new HashMap<String, Rides>();
 
     @Override
     public void start(Stage primaryStage) throws Exception {

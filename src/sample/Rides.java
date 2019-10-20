@@ -2,39 +2,49 @@ package sample;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Random;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Rides {
-  private SimpleStringProperty passengerName;
-  private LocalTime time_OfRide;
-  private LocalDate date_OfRide;
+  private String passengerName;
+  private String startTime;
+  private String endTime;
+  private String startLocation;
+  private String endLocation;
+  private int rideID;
 
-  public Rides(String passengerName, LocalTime time, LocalDate Date){
-    this.passengerName = new SimpleStringProperty(passengerName);
-    this.date_OfRide = Date;
-    this.time_OfRide = time;
-  }
-  public String getPassengerName(){
-    return passengerName.get();
-  }
 
-  public void setPassengerName(SimpleStringProperty passengerName) {
-    this.passengerName = passengerName;
-  }
-
-  public LocalDate getDate_OfRide() {
-    return date_OfRide;
+  public Rides(String passName, String startT, String endT,String startLoc, String endLoc){
+    this.passengerName = passName;
+    this.startTime = startT;
+    this.endTime = endT;
+    this.startLocation = startLoc;
+    this.endLocation = endLoc;
+    Random rnd = new Random();
+    this.rideID = rnd.nextInt(999999);
   }
 
-  public void setDate_OfRide(LocalDate date) {
-    date_OfRide = date;
+  public String getPassengerName() {
+    return passengerName;
   }
 
-  public LocalTime getTime_OfRide() {
-    return time_OfRide;
+  public String getStartTime() {
+    return startTime;
   }
 
-  public void setTime(LocalTime time) {
-    this.time_OfRide = time;
+  public String getEndTime() {
+    return endTime;
+  }
+
+  public String getStartLocation() {
+    return startLocation;
+  }
+
+  public String getEndLocation() {
+    return endLocation;
+  }
+
+  public int getRideID() {
+    return rideID;
   }
 }

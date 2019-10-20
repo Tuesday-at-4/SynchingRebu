@@ -32,6 +32,7 @@ public class Login_Controller {
 
   @FXML
   private void initialize(){
+    System.out.println("Login Credentials were rejected.");
   }
 
   @FXML
